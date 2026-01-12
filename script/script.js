@@ -120,4 +120,23 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.contentDiv, .resultDiv').text('');
         currentItem = null;
     });
+
+    // ✅ (6) 키패드 클릭 이벤트
+    $('.keypad-btn').click(function () {
+        let input = $('.searchBox .ipt');
+        let action = $(this).data('action');
+        
+        // 지우기 기능
+        if (action === 'delete') {
+            let currentValue = input.val();
+            input.val(currentValue.slice(0, -1)); // 마지막 문자 삭제
+        } else if (action === 'clear') {
+            input.val(''); // 전체 지우기
+        } else {
+            // 일반 키패드 입력
+            let value = $(this).data('value');
+            let currentValue = input.val();
+            input.val(currentValue + value);
+        }
+    });
 });
