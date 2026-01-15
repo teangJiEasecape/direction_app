@@ -2,7 +2,7 @@
     "name": "힌트APP",
     "short_name": "힌트APP",
     "description": "힌트를 제공하는 웹 애플리케이션",
-    "start_url": "/escape_company/",
+    "start_url": "/direction_app/",
     "display": "standalone",
     "background_color": "#fff",
     "icons": [
