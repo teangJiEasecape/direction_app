@@ -117,7 +117,7 @@ footer .adminBtn .icon{ filter: invert(100%); width: 15px; }
 .hintResetBtn{  padding: 10px; border: 1px solid #fff; color: #fff; background:#000; margin-top: 10px; }
 
 .number{ display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; padding: 0 10px; }
-.number .keypad-btn{ padding: 15px; font-size: 18px; font-weight: 500; border: 1px solid #fff; background-color: #000; color: #fff; border-radius: 5px; transition: all 0.2s; }
+.number .keypad-btn{ padding: 15px; font-size: 18px; font-weight: 500; border: 1px solid #fff; background-color: #000; color: #fff; border-radius: 5px; transition: all 0.2s; cursor: pointer; pointer-events: auto; position: relative; z-index: 1; }
 .number .keypad-btn:active{ background-color: #333; transform: scale(0.95); }
 .number .keypad-delete{ background-color: #444; }
 .number .keypad-clear{ grid-column: span 4; background-color: #666; font-size: 14px; }
