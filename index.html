@@ -9,6 +9,7 @@
     <!--스크립트-->
     <script type="text/javascript" src="./script/script.js"></script>
     <script type="text/javascript" src="./script/app.js"></script>
+    <script type="text/javascript" src="/service-worker.js"></script>
     <!--폰트-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,17 +20,22 @@
     <!-- (1) xlsx 라이브러리 추가) -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
     <link rel="manifest" href="/direction_app/manifest.json" />
+    <link rel="manifest" href="/direction_app/manifest.webmanifest" />
     <meta name="theme-color" content="#000000" />
     <script>
+      // service-worker 등록 코드
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
           navigator.serviceWorker
             .register('/direction_app/service-worker.js')
             .then(function (registration) {
-              console.log('ServiceWorker registration successful:', registration.scope);
+              console.log(
+                'ServiceWorker registration successful with scope: ',
+                registration.scope
+              );
             })
             .catch(function (err) {
-              console.log('ServiceWorker registration failed:', err);
+              console.log('ServiceWorker registration failed: ', err);
             });
         });
       }

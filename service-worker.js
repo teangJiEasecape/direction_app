@@ -1,12 +1,14 @@
 const CACHE_NAME = 'hintapp-cache-v1';
 const urlsToCache = [
-  '/direction_app/',          
+  '/direction_app/',          // 홈페이지 URL
   '/direction_app/index.html',
   '/direction_app/css/style.css',
   '/direction_app/script/script.js',
   '/direction_app/script/app.js',
   '/direction_app/img/search.png',
   '/direction_app/manifest.json',
+  '/direction_app/img/search.png',
+  '/direction_app/css/style.css'
 ];
 
 // 설치 이벤트 (처음 설치할 때 파일들 캐싱)
