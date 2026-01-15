@@ -18,14 +18,14 @@
     />
     <!-- (1) xlsx 라이브러리 추가) -->
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-    <link rel="manifest" href="./manifest.json" />
+    <link rel="manifest" href="/direction_app/manifest.json" />
     <meta name="theme-color" content="#000000" />
     <script>
       // service-worker 등록 코드
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
           navigator.serviceWorker
-            .register('./service-worker.js')
+            .register('/direction_app/service-worker.js')
             .then(function (registration) {
               console.log(
                 'ServiceWorker registration successful with scope: ',
