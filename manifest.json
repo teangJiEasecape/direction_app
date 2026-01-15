@@ -1,40 +1,39 @@
 {
   "name": "힌트APP",
   "short_name": "힌트APP",
-  "description": "힌트를 제공하는 웹 애플리케이션",
+  "description": "힌트APP",
   "start_url": "/direction_app/",
-  "scope": "/direction_app/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/direction_app/img/search.png",
+      "src": "/direction_app/img/icon.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/direction_app/img/search.png",
+      "src": "/direction_app/img/icon.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/direction_app/img/search.png",
+      "src": "/direction_app/img/icon.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/direction_app/img/search.png",
+      "src": "/direction_app/img/icon.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/direction_app/img/search.png",
+      "src": "/direction_app/img/icon.png",
       "sizes": "168x168",
       "type": "image/png"
     },
     {
-      "src": "/direction_app/img/search.png",
+      "src": "/escape_gallery_version2/img/gallery.png",
       "sizes": "192x192",
       "type": "image/png"
     }
